@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { watch } = require('fs');
 
 module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
+        watchFiles: ['./src/index.html'],
     },
     entry: './src/index.js',
     plugins: [
@@ -14,10 +16,16 @@ module.exports = {
         }),
     ],
     module: {
-        rules: {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader'],
-        },
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',        
+            },
+        ],
     },
     output: {
         filename: 'main.js',
