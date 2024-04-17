@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    devtools: 'inline-source-map',
+    devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
@@ -13,7 +13,12 @@ module.exports = {
             template: './src/index.html',
         }),
     ],
-    module: {},
+    module: {
+        rules: {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+        },
+    },
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
