@@ -25,12 +25,39 @@ nav > div {
 }
 
 nav > div > button {
-    padding: 10px;
+    padding: 8px;
     font-size: 1rem;
+}
+
+.hero {
+    display: flex;
+    gap: 80px;
 }
 
 .banner {
     background: url('./photo.jpg');
     width: 950px;
     height: 600px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.headline > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.headline > p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-wrap: wrap;
 }
