@@ -34,27 +34,27 @@ nav > div > button {
     gap: 80px;
 }
 
-.banner {
+.hero-img {
     background: url('./photo.jpg');
     width: 950px;
     height: 600px;
 }
 
-.headline {
+.hero-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 300px;
 }
 
-.headline > h2 {
+.hero-text-container > h2 {
     font-size: 2rem;
     font-weight: 600;
     font-style: italic;
     margin: 10px 0;
 }
 
-.headline > p {
+.hero-text-container > p {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 25px;
