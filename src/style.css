@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-nav {
+header {
     background-color: #14532d;
     display: flex;
     align-items: center;
@@ -13,18 +13,18 @@ nav {
     padding: 10px;
 }
 
-nav > p {
+header > p {
     color: white;
     font-size: 2rem;
     font-weight: 100;
 }
 
-nav > div {
+nav {
     display: flex;
     gap: 15px;
 }
 
-nav > div > button {
+nav button {
     padding: 8px;
     font-size: 1rem;
 }
