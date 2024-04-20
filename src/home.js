@@ -14,6 +14,7 @@ export function initialPageLoad() {
     heroHeader.innerText = 'Try our newest dish!';
     heroParagraph.innerText = 'cas vnsej najaovnw nqejfqe kjfnqiwe nqiweniq  iqnw jdsn jvqnwejfnwejqnfie nei i minima ullam tempora velit laboriosam. Autem excepturi ducimus error. Iste molestiae dicta eligendi perspiciatis.';
 
+    content.innerHTML = '';
     heroContainer.appendChild(heroImg);
     heroContainer.appendChild(heroTextContainer);
     heroTextContainer.appendChild(heroHeader);
