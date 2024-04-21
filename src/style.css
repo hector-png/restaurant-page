@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #1e293b;
+}
+
 header {
     background-color: #14532d;
     display: flex;
@@ -30,11 +34,6 @@ nav button {
     border-radius: 10px;
     padding: 4px;
     width: 80px;
-
-}
-
-#content {
-    background-color: #1e293b;
 }
 
 /* Home */
