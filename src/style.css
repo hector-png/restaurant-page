@@ -119,3 +119,78 @@ nav button {
     margin-top: 20px;
     grid-row: 2 / 3;
 }
+
+/* About */
+.contact-info,
+.address-info {
+    font-weight: 600;
+}
+
+.contact-title,
+.address-title{
+    font-size: 2rem;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 4px;
+}
+
+.contact-phone,
+.contact-email,
+.address {
+    font-size: 1.5rem;
+}
+
+/* Contact info */
+.contact-info {
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contact-title {
+    grid-column: 1 / 2;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.contact-phone,
+.contact-email {
+    letter-spacing: 1px;
+    grid-row: 2 / 3;
+}
+
+.contact-phone {
+    place-self: center;
+    margin-left: 100px;
+}
+
+.contact-email {
+    align-self: center;
+    justify-self: start;
+}
+
+/* Address info */
+.address-info {
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    margin-top: 100px;
+}
+
+.address {
+    margin-left: 100px;
+}
+
+.address-title {
+    margin-right: 15px;
+}
+
+.map-placeholder {
+    color: orange;
+    text-align: center;
+    place-self: center;
+    border: solid #14532d;
+    width: 1000px;
+    height: 350px;
+}
